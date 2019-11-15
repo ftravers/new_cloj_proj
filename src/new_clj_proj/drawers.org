@@ -1,0 +1,83 @@
+To Build:
+
+|    |          | 6 | 12 | 12 |  to |
+|    |          | a | b  | c  | cut |
+|----+----------+---+----+----+-----|
+| S1 | 17 1/2   |   | X  | O  |   2 |
+| S2 | 17 1/2   |   | O  | O  |   2 |
+| S3 | 15 7/8   |   |    |    |   6 |
+| W1 | 17 11/16 |   | X  | X  |   2 |
+| W2 | 16 7/8   |   | O  | O  |   2 |
+
+X = drawer built
+O = wood cut front/back
+
+Need to cut:
+
+
+Front/Back already cut
+
+| 17 5/8  | 4 | -> S2 | 17 1/2 |
+| 17 7/8  | 2 | -> S1 | 17 1/2 |
+| 17 1/16 | 4 | -> W2 | 16 7/8 |
+
+Sides already cut
+
+8  x 4"  x 23 3/4"
+10 x 10" x 23 3/4"
+
+Sides Already Cut 
+|    | 6 | 12 | 12 |
+| S1 | x | x  |    |
+| S2 | x | x  |    |
+| S3 | x | x  |    |
+| W1 | x | x  |    |
+| W2 |   | x  |    |
+
+* 6"
+|    | panel | front/back |
+|    | cut   | cut        |
+|----+-------+------------|
+| s2 | x     | x          |
+| s3 | x     | x          |
+| w1 | x     | x          |
+| w2 | x     | x          |
+
+* 12"
+|    | panel | front/back |
+|    | cut   | cut        |
+|----+-------+------------|
+| s3 |  x    | x          |
+| w2 |  x    | x          |
+
+* 12"
+|    | panel | front/back |
+|    | cut   | cut        |
+|----+-------+------------|
+| s2 |  x    |            |
+| s3 |  x    | x          |
+| w2 |  x    | x          |
+
+
+
+
+
+
+
+* Assembled
+s1 12, s1 12, s1 6
+s2 12,
+w1 12, w1 12, 
+
+* Fronts/Back
+w1 6 X
+w2 12, w2 12, w2 6 X
+s2 6
+s3 12, s3 12, s3 6  X
+
+
+* Missing
+S2 12
+
+* Panels
+

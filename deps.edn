@@ -1,5 +1,4 @@
 {:paths ["src" "resources" "target"]
-
  :deps
  {
   de.ubercode.clostache/clostache {:mvn/version "1.4.0"}
