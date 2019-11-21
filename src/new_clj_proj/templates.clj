@@ -1,11 +1,37 @@
 (ns new-clj-proj.templates
   (:require
+   [me.raynes.fs :refer [copy mkdir]]
+   [com.rpl.specter :refer [transform ALL select] :as spectr]
    [clostache.parser :as clo]))
 
-(def path "templates/deps.edn")
-(def data {:name "Felix"})
-(clo/render-resource path data)
-;; => "{:paths [\"src\" \"resources\" \"target\"]\n\n Felix\n\n :deps\n {}\n\n :aliases\n {:dev {:extra-paths [\"test\"]\n        :extra-deps\n        {com.bhauman/figwheel-main {:mvn/version \"0.2.0\"}}}\n  :fig {:main-opts [\"-m\" \"figwheel.main\"]}}}\n"
+(defn prepend-root
+  [path-root files] 
+  (transform [ALL :filename] #(str path-root %) files))
 
-'
+(def data
+  {:template-root "templates/"
+   :new-project-name "blah"
+   :templates
+   [{:filename "deps.edn"
+     :target-location "."
+     :replacements {:name "felix"}}
+    {:filename "fe_dev.cljs.edn"
+     :target-location "."
+     :replacements {:project-name "bob"}}]})
+
+(defn main [data]
+  (let [dest-dir (:new-project-name data)
+        ]
+    (mkdir dest-dir)
+    (->> data
+         (transform :templates (partial prepend-root (:template-root data)))
+         (transform :templates (partial ))
+         :templates
+         (map (fn [{:keys [filename replacements]}]
+                ;; (str "filename: " filename)
+                (spit filename (clo/render-resource filename replacements)))))))
+
+
+
+
 
